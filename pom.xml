@@ -11,24 +11,19 @@
     <modules>
         <module>filtration-datasource</module>
         <module>filtration-runtime</module>
-        <module>filtration-proto</module>
+        <module>filtration-strategy</module>
     </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
+    <dependencyManagement>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
-        <dependency>
-            <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka-clients</artifactId>
-            <version>3.1.0</version>
-        </dependency>
         <dependency>
             <groupId>org.chunhuiwu</groupId>
             <artifactId>filtration</artifactId>
         </dependency>
     </dependencies>
+    </dependencyManagement>
 </project>

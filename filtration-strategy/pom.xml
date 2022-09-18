@@ -9,15 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>filtration-runtime</artifactId>
+    <artifactId>filtration-strategy</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.chunhuiwu</groupId>
             <artifactId>filtration-datasource</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.chunhuiwu</groupId>
-            <artifactId>filtration-strategy</artifactId>
         </dependency>
     </dependencies>
 
@@ -26,17 +22,12 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
     <dependencyManagement>
-    <dependencies>
-        <dependency>
-            <groupId>org.chunhuiwu</groupId>
-            <artifactId>filtration-datasource</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.chunhuiwu</groupId>
-            <artifactId>filtration-strategy</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+        <dependencies>
+            <dependency>
+                <groupId>org.chunhuiwu</groupId>
+                <artifactId>filtration-datasource</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
 </project>
