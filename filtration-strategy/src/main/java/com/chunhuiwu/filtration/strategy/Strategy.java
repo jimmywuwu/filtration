@@ -6,7 +6,7 @@ import java.util.Map;
 
 public abstract class Strategy {
     protected Map<String, DataSource> datasource;
-
+    public Strategy(){};
     public void setDatasource(Map datasource) {
         this.datasource = datasource;
     }

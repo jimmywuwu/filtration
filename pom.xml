@@ -13,7 +13,6 @@
         <module>filtration-runtime</module>
         <module>filtration-strategy</module>
     </modules>
-
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
@@ -23,6 +22,10 @@
         <dependency>
             <groupId>org.chunhuiwu</groupId>
             <artifactId>filtration</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.chunhuiwu</groupId>
+            <artifactId>filtration-runtime</artifactId>
         </dependency>
     </dependencies>
     </dependencyManagement>
