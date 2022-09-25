@@ -16,12 +16,13 @@ public abstract class DataSource implements Runnable{
 
     public void init(){
         this.logger = Logger.getLogger(this.getClass().getName());
-    }
-
-    public void update_bar() throws InterruptedException {
         Instant instant = Instant.now();
         today_start = instant.getEpochSecond();
         today_start = today_start - today_start%86400;
+        curr_slot =  (int)(Instant.now().getEpochSecond() - today_start)/60;
+    }
+
+    public void update_bar() throws InterruptedException {
         long timeStampSeconds;
         while(true){
             Instant now = Instant.now();

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="filtration-runtime" />
+        <module name="filtration-strategy" />
         <module name="filtration-datasource" />
       </profile>
     </annotationProcessing>
